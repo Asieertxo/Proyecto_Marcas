@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+    <head>
+        <title>Servicios Asier</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilos_reparacion.css">
+        <!--Bootstrap para los iconos del footer-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header><!--Portada-->
+            <div class="textos-portada">
+                <h1>Servicios Moviles</h1>
+                <p>Todo lo que necesitas</p>
+            </div>
+        </header>
+
+        <!--Navegacion superior de la derecha-->
+      <div class="navegacion">
+        <a href="../Principal/principal.html">Home</a>
+        <a href="../Noticias/noticias.html">Noticias</a>
+        <a href="../Reparacion/reparacion.html">Reparacion</a>
+        <a href="../Acceso/registrar.html">Acceso</a>
+  
+        <div class="navegacion"><!--Boton Goole-->
+          <form method="GET" action="https://www.google.com/search" target="_blank">
+            <input type="search" name="q" placeholder="Buscar en Google" autofocus required>
+            <input type="submit">
+          </form>
+        </div>
+        <a href="../Nosotros/nosotros.html" style="float:right;">Nosotros</a>
+        <a href="../Landing Page/Landing Page.html" style="float:right">Contacto</a>
+      </div>
+
+      <!--1º Seccion - Informacion destacada-->
+      <section style="height: 150px;">
+            <div class="destacado">
+                <div>
+                    <img src="./IMG/reloj.png">
+                    <p>Tu movil reparado en 24 horas</p>
+                </div>
+                <div>
+                    <img src="./IMG/trabajador.png">
+                    <p>Cubierto frente a robo o hurto</p>
+                </div>
+                <div>
+                    <img src="./IMG/movilbien.png">
+                    <p>Sin franquicias ni carencias</p>
+                </div>
+            </div>
+      </section>
+
+      <!--2º Seccion - Rango de precio-->
+      <section style="text-align: center;">
+          <h2>¿Que precio tiene tu movil?</h2>
+      </section>
+      <section class="precio-movil">
+          <from action="">
+                <input type="range" name="precio" id="rango" list="listaP" >
+                    <datalist id="listaP">
+                        <option value="0">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50">  <!--las marquitas de abajo en la barrra-->
+                        <option value="60">
+                        <option value="70">
+                        <option value="80">
+                        <option value="90">
+                        <option value="100">
+                    </datalist>
+                <h1 id=precio>500</h1>
+                <a class="boton" onclick="calcular();">Calcular Seguro</a><!--orden enviada al script-->
+          </from>
+
+<!--.......Script...................................................................................-->
+          <script src="rango.js"></script>
+
+      </section>
+
+      <!--3º Seccion - tabla de calculo de precios-->
+      <section class="contenedor">
+            <div class="columna">
+                <h2>Basico</h2>
+                <div class="precios">
+                    <p class="precio" id="mes-basico">Dale</p>
+                    <p class="€">€</p>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <hr>
+                <p>Lorem, ipsum dolor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur</p>
+                <p>Lorem, ipsum</p>
+                <hr>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+            <div class="columna">
+                <h2>Inferior</h2>
+                <div class="precios">
+                    <p class="precio" id="mes-inferior">Arriba</p>
+                    <p class="€">€</p>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <hr>
+                <p>Lorem, ipsum dolor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur</p>
+                <p>Lorem, ipsum</p>
+                <hr>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+            <div class="columna">
+                <h2>Superior</h2>
+                <div class="precios">
+                    <p class="precio" id="mes-superior">Para</p>
+                    <p class="€">€</p>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <hr>
+                <p>Lorem, ipsum dolor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur</p>
+                <p>Lorem, ipsum</p>
+                <hr>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+            <div class="columna">
+                <h2>TOP</h2>
+                <div class="precios">
+                    <p class="precio" id="mes-top">Calcular</p>
+                    <p class="€">€</p>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <hr>
+                <p>Lorem, ipsum dolor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur</p>
+                <p>Lorem, ipsum</p>
+                <hr>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+      </section>
+
+      <!--4º Seccion - info-->
+      <section class="reparar">
+          <div class="reparar-texto">
+              <h2>Reparar movil: como es el proceso</h2>
+              <p>Si necesitas reparar el móvil lo primero que debes tener en cuenta es si el teléfono se encuentra en periodo de garantía o no. En ANOVO reparamos móviles, tablets y otros dispositivos electrónicos tanto si la avería está cubierta por la garantía como si no. Pero a la hora de solicitar tu reparación, en caso de que la garantía del fabricante esté vigente, deberás presentar, en el centro ANOVO care que elijas, toda la documentación necesaria. Te aconsejamos que visites nuestro artículo sobre la garantía de móviles para saber todos los detalles.</p>
+              <p>Para solicitar la reparación del móvil solo tienes que acercarte a uno de nuestros servicios técnicos oficiales con tu dispositivo y toda la documentación pertinente y consultar con nuestros técnicos la incidencia que presenta el terminal</p>
+              <p>Tras el diagnóstico, nuestros técnicos te ofrecerán la solución que mejor se adapta a tu incidencia y, en caso de que no esté cubierta por la garantía o que haya expirado el periodo legal, se te elaborará un presupuesto detallado del coste de la reparación.</p>
+          </div>
+          <div class="reparar-img">
+              <img src="./IMG/reparacion.jpg">
+          </div>
+      </section>
+
+      <!--5º Seccion - columnas-->
+      <section class="info">
+            <div class="column">
+                <img src="./IMG/calendario.png">
+                <h2>Reparacion en 1 dia</h2>
+                <p>Te ofrecemos un servicio de reparación en el mismo día para todos aquellos dispositivos cuya incidencia pueda ser resuelta en el laboratorio de nuestra tienda de reparación de móviles.
+                <br>Como servicio técnico oficial, solo utilizamos piezas originales de cada modelo y cada fabricante, este tipo de reparación express está sujeta a la disponibilidad de piezas de recambio en tienda.</p>
+            </div>
+            <div class="column">
+                <img src="./IMG/movilroto.png">
+                <h2>Cambio de pantalla</h2>
+                <p>Reparar la pantalla rota del móvil es una de las solicitudes más habituales que atendemos en nuestro servicio técnico. Esta incidencia, aunque el teléfono móvil se encuentre en periodo de garantía, no está cubierta pues se considera un uso incorrecto del dispositivo.
+                <br>Te elaboramos un presupuesto y, en caso de que estés de acuerdo, podemos sustituir tu pantalla en el acto siempre que contemos con el repuesto.</p>
+            </div>
+            <div class="column">
+                <img src="./IMG/repararmovil.png">
+                <h2>Reparaciones con nosotros</h2>
+                <p>En el caso de que tu smartphone no pueda ser arreglado en el acto, nuestros técnicos darán entrada a tu dispositivo en el laboratorio donde será reparado en un plazo de 3 a 5 días laborables aproximadamente (siempre sujeto a la disponibilidad de piezas).
+                <br>Todas nuestras reparaciones tienen una garantía de 6 meses desde la fecha de entrega al cliente.</p>
+            </div>
+      </section>
+
+        <!--6º Seccion - tabla-->
+       <secction >
+           <table>
+                <thead>
+                    <th></th>
+                    <th>Pantalla</th>
+                    <th>Bateria</th>
+                    <th>Conector Carga</th>
+                    <th>Camara</th>
+                    <th>Altavoz</th>
+                    <th>Microfono</th>
+                    <th>Vibrador</th>
+                </thead>
+                <tr>
+                    <th>Samsung Galaxy S21 Ultra</th>
+                    <th>370.00€</th>
+                    <th>75.00€</th>
+                    <th>70.00€</th>
+                    <th>110.00€</th>
+                    <th>40.00€</th>
+                    <th>35.00€</th>
+                    <th>35.00€</th>
+                </tr>
+                <tr>
+                    <th>Iphone 12 Pro Max</th>
+                    <th>450.00€</th>
+                    <th>160.00€</th>
+                    <th>90.00€</th>
+                    <th>200.00€</th>
+                    <th>60.00€</th>
+                    <th>35.00€</th>
+                    <th>35.00€</th>
+                </tr>
+                <tr>
+                    <th>Oneplus 9 Pro</th>
+                    <th>360.00€</th>
+                    <th>70.00€</th>
+                    <th>60.00€</th>
+                    <th>80.00€</th>
+                    <th>40.00€</th>
+                    <th>35.00€</th>
+                    <th>35.00€</th>
+                </tr>
+                <tr>
+                    <th>Xiaomi Mi 11 Pro</th>
+                    <th>240.00€</th>
+                    <th>40.00€</th>
+                    <th>50.00€</th>
+                    <th>60.00€</th>
+                    <th>30.00€</th>
+                    <th>25.00€</th>
+                    <th>25.00€</th>
+                </tr>
+                <tr>
+                    <th>Samsung Galaxy S20 Plus</th>
+                    <th>350.00€</th>
+                    <th>70.00€</th>
+                    <th>65.00€</th>
+                    <th>105.00€</th>
+                    <th>40.00€</th>
+                    <th>35.00€</th>
+                    <th>35.00€</th>
+                </tr>
+                <tr>
+                    <th>Iphone 11 Pro Max</th>
+                    <th>410.00€</th>
+                    <th>140.00€</th>
+                    <th>80.00€</th>
+                    <th>180.00€</th>
+                    <th>60.00€</th>
+                    <th>35.00€</th>
+                    <th>35.00€</th>
+                </tr>
+           </table>
+       </secction>
+
+        <!--Footer-->
+        <footer>
+            <div class="contenido-footer">
+                <h3>Servicios Moviles</h3>
+                <p>Siguenos en todas nuestras redes sociales para no perderte las novedades y ofertas del sector.</p>
+                <ul class="redes-sociales">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-abajo">
+                <p>copyright &copy;2021 | Proyecto de marcas de Asier</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+  
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+  /*Cookies..............................................................*/
+#cajacookies {
+  box-shadow: 0px 0px 5px 5px #808080;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+#cajacookies button {
+  color: black;
+}
+
+  /*Portada..............................................................*/
+header{
+    background-color: #24303c; /*color de fondo*/
+    width: 100%; /*ancho de la cabecara*/
+    height: 650px; /*largo de  la cabecara*/
+}
+.textos-portada{
+    height: 500px; /*ancho de texto*/
+    color: #fff; /*color de texto*/
+    display: flex; 
+    flex-direction: column;       /*Con estos 4 ponemos*/
+    justify-content: center;      /*los textos centrados*/
+    align-items: center;
+}
+.textos-portada h1{
+    font-size: 60px; /*tamaño*/
+}
+.textos-portada p{
+    font-size: 25px; /*tamaño*/
+    margin-bottom: 20px; /*margen de abajo*/
+}
+
+/*Caja navegacion......................................................*/
+.navegacion {
+    overflow: hidden; /*regula visibilidad*/
+    background-color: #12181f; /*color de fondo*/
+    border-bottom-left-radius: 15px; /*redondea esquina*/
+    border-bottom-right-radius: 15px;/*redondea esquina*/
+}
+/*Enlacen de navegacion*/
+.navegacion a {
+    float: left; /*flotarlo a la izquierda*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*quitamos la linea de enlace*/
+}
+
+/* Color al pasar el raton*/
+.navegacion a:hover {
+    background-color: #24303c;
+}
+
+.navegacion div{ /*posicionado a la derecha y decoracion de caja de texto y boton*/
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*1º seccion..................................................*/
+.izq-columna{       /*con estas 2 clases dividimos la seleccion en 2 mitades iguales*/
+    float: left;
+    width: 50%;
+}
+.der-columna{
+    float: right;
+    width: 50%;
+}
+
+/*3º seccion.................................................*/
+.seccion,
+.wave-seccion{/*determinamos el tamaño de la seccion, el margen y el relleno*/
+    width: 90%;
+    max-width: 1000px; 
+    overflow: hidden;
+    margin: auto; 
+    padding: 0 0 80px 0;
+}
+.seccion{
+    padding: 80px 0;
+}
+.cartas{ /*ponemos que ocupe el 100% de forma flexible que permite ponerlas de forma orizaontar y no todas en vertical*/
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.carta{ /*ocupa el 30% del div, centrado con largo de 300px y la transicion de reescalado*/
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+.carta:hover{ /*al pasar el raton el puntero cambia y reescalamos un poquito la carta*/
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+/*4º seccion - setup...................*/
+.espacio{/*espacio de separacion de 100px*/
+    height: 100px;
+}
+.setup{/*1º zona con medidas de alto, ancho y maximo ancho, ponemos un borde al div de 15px*/
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 650px;
+    border-radius: 15px;
+}
+.imagen-setup{/*imagen con imagen de fondo con posicion relativa con medidas fijadas, borde redondeado de 15px y flotada a la izquierda*/
+    position: relative;
+    background-image: url(IMG/setup.jpg);
+    width: 900px;
+    height: 450px;
+    border-radius: 15px;
+}
+.texto-setup{/*texto con fondo blanco, borde redondeado de 15px, medidas fijadas y posicion absoluta para centrarla en el lateral opuesto a la imagen pero comiendo un trozo a la imagen. texto centrado*/
+    background-color: white;
+    border-radius: 15px;
+    width: 650px;
+    height: 200px;
+    position: absolute;
+    top: 2570px;
+    left: 500px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*5º seccion - montaje...................*/
+.montaje{/*2º zona con medidas de alto, ancho y maximo ancho, ponemos un borde al div de 15px*/
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 650px;
+    border-radius: 15px;
+}
+.imagen-montaje{/*div con imagen de fondo con posicion relativa con medidas fijadas, radio de 15px y flotada a la derecha*/
+    position: relative;
+    background-image: url(IMG/montar-pc.jpg);
+    width: 900px;
+    height: 450px;
+    border-radius: 15px;
+    float: right;
+}
+.texto-montaje{/*texto con fondo blanco, borde redondeado de 15px, medidas fijadas y posicion absoluta para centrarla en el lateral opuesto a la imagen pero comiendo un trozo a la imagen. texto centrado*/
+    background-color: #24303c;
+    color: white;
+    border-radius: 15px;
+    width: 650px;
+    height: 200px;
+    position: absolute;
+    top: 3225px;
+    left: 0px;
+    right: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*6º seccion - atencion...................*/
+.atencion{/*3º zona con medidas de alto, ancho y maximo ancho, ponemos un borde al div de 15px*/
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 650px;
+    border-radius: 15px;
+}
+.imagen-atencion{/*imagen con imagen de fondo con posicion relativa con medidas fijadas, radio de 15px y flotada a la izquierda*/
+    position: relative;
+    background-image: url(IMG/atencion-cliente.jpg);
+    width: 900px;
+    height: 450px;
+    border-radius: 15px;
+}
+.texto-atencion{/*texto con fondo blanco, borde redondeado de 15px, medidas fijadas y posicion absoluta para centrarla en el lateral opuesto a la imagen pero comiendo un trozo a la imagen. texto centrado*/
+    background-color: white;
+    border-radius: 15px;
+    width: 650px;
+    height: 200px;
+    position: absolute;
+    top: 3870px;
+    left: 500px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Footer..................................*/
+footer{/*colores fijados*/
+    background: rgb(14, 14, 14);
+    color: #fff;
+}
+.contenido-footer{/*para conseguir centrar todos los elementos del div en columnas peroi una debajo de la otra*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contenido-footer h3{
+    font-size: 28px;
+}
+.redes-sociales{/*conseguir que los iconos de redes sociales salgas uno seguido del otro con cierta separacion y centrados*/
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 48px 0;
+}
+.redes-sociales li{
+    margin: 0 10px;
+}
+.redes-sociales a{
+    color: #fff;
+}
+.redes-sociales a:hover i{/*al pasar el raton que cambien de color*/
+    color: aqua;
+}
+.footer-abajo{/*parta mas baja con otro color de fondo y centrado*/
+    background: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+/*Estilos Generales.......................*/
+.titulo{/*tamaño del titulo y centrarlo, tambien un margen inferior*/
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.parrafo{/*iguala la longitud de todas las lienas y un margen inferior*/
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.imagen{/*ocupa la mitad de donde este y un margen de un 15% en todas direcciones*/
+    width: 50%;
+    margin: 15%;
+}
+
+.boton{/*creamos una caja de bloque con color de fondo, redondeado de los border, un relleno. Al texto le quitamos decoraciones del enlace y le ponemos color*/
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #24303c;
+    border-radius: 8px;
+    color: #fff;
+}

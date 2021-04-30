@@ -1,0 +1,57 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilo-acceso.css">
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <form class="caja" action="../Principal/principal.html" method="POST">
+    <h4>Formulario Registro</h4>
+    <!--Nombre-->
+    <input class="rellenar" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+    <!--Apellido-->
+    <input class="rellenar" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+    <div>
+      <button class="genero der" id="btn1">Hombre</button>
+      <button class="genero izq" id="btn2">Mujer</button>
+    </div>
+    <!--Fecha de Nacimiento-->
+    <h5>Fecha de Nacimiento:</h5>
+    <input  class="rellenar" type="date" value="Fecha de Nacimiento" min="1921-01-01" max="2003-04-12" required>
+    <!--Comunidad-->
+    <select class="rellenar" id="Comunidad" name="Comunidad">
+      <option value="Madrid" selected>Comunidad Autonoma</option>
+      <option value="Madrid">Madrid</option>
+      <option value="Madrid">Pais Vasco</option>
+      <option value="Madrid">C. Leon</option>
+      <option value="Madrid">C. Mancha</option>
+      <option value="Madrid">Andalucia</option>
+      <option value="Madrid">Cataluña</option>
+      <option value="Madrid">Galicia</option>
+      <option value="Madrid">Valencia</option>
+    </select>
+    <!--Email-->
+    <input class="rellenar" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+    <!--Contraseña-->
+    <input class="rellenar" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña" required>
+    <!--Terminos y condiciones-->
+    <p>Estoy de acuerdo con <a href="https://terminosycondicionesdeusoejemplo.com/">Terminos y Condiciones</a> <input type="checkbox" required> </p>
+    <!--Boton-->
+    <a type="boton" name="enviar" id="enviar" class="boton" href="../Principal/principal.html">Registrarse</a>
+    <!--Iniciar Sesion-->
+    <p><a href="./Iniciar.html">¿Ya tengo Cuenta?</a></p>
+  </form>
+
+  <script src="cambio.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+<!--RogerNatividad-->

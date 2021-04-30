@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+}
+  
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+  /*Portada..............................................................*/
+  header{
+    background-color: #24303c; /*color de fondo*/
+    width: 100%; /*ancho de la cabecara*/
+    height: 650px; /*largo de  la cabecara*/
+}
+.textos-portada{
+    height: 500px; /*ancho de texto*/
+    color: #fff; /*color de texto*/
+    display: flex; 
+    flex-direction: column;       /*Con estos 4 ponemos*/
+    justify-content: center;      /*los textos centrados*/
+    align-items: center;
+}
+.textos-portada h1{
+    font-size: 60px; /*tamaño*/
+}
+.textos-portada p{
+    font-size: 25px; /*tamaño*/
+    margin-bottom: 20px; /*margen de abajo*/
+}
+
+/*Caja navegacion......................................................*/
+.navegacion {
+    overflow: hidden; /*regula visibilidad*/
+    background-color: #12181f; /*color de fondo*/
+    border-bottom-left-radius: 15px; /*redondea esquina*/
+    border-bottom-right-radius: 15px;/*redondea esquina*/
+}
+/*Enlacen de navegacion*/
+.navegacion a {
+    float: left; /*flotarlo a la izquierda*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*quitamos la linea de enlace*/
+}
+
+/* Color al pasar el raton*/
+.navegacion a:hover {
+    background-color: #24303c;
+}
+
+.navegacion div{ /*posicionado a la derecha y decoracion de caja de texto y boton*/
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*1º seccion.................................................*/
+.destacado{/*le ponemos ancho de 60% con margen y centrado(tiene dentro al siguinete div)*/
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.destacado div{/*acho de 30% movido a la izquierda(tiene dentro la imagen y el parrafo)*/
+    width: 30%;
+    float: left;
+}
+.destacado div img{/*acho de 30% movido a la izquierda*/
+    width: 30%;
+    float: left;
+}
+.destacado div p{/*acho de 30% movido a la derecha*/
+    width: 70%;
+    float: right;
+}
+
+/*2º seccion.................................................*/
+.precio-movil{/*ocupamos el 70% centrado con margenes definidos*/
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+
+}
+.precio-movil input{
+    width: 80%;
+}
+.precio-movil a{
+    text-align: center;
+    margin: auto;
+}
+
+/*3º seccion.................................................*/
+.contenedor{/*fijamos los margenes, el ancho y lo ponemos en columnas una al lado de otra*/
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    text-align: center;
+}
+.columna{/*ponemos fondo y colores corresponpientes, margenes y rellenos, tambien una sombra*/
+    background:white;
+    color: #333;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #888;
+}
+.columna h2{/*tamaño del texto*/
+    font-weight: 400px;
+}
+.columna p{/*tamaño del texto*/
+    font-weight: 300px;
+}
+.precios{/*fijamos la proporcion del ancho*/
+    width: 90%;
+}
+.precio{/*ponemos cualidades al texto, un ancho del 80% movido a la izquierda y sin bordes*/
+    font-size: 50px;
+    color: #24303c;
+    width: 80%;
+    border: 0px;
+    float: left;
+}
+.€{/*igual que el anterior pero ancho del 20% a la derecha*/
+    font-size: 50px;
+    color: #24303c;
+    width: 20%;
+    border: 0px;
+    float: right;
+}
+
+
+/*4º seccion.................................................*/
+.reparar{/*seccion al 70% con margenes y elementos centrados*/
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+}
+.reparar-texto{/*ancho del 60% a la izquierda*/
+    width: 60%;
+    float: left;
+}
+.reparar-img{/*ancho del 30% a la derecha*/
+    width: 30%;
+    float: right;
+}
+
+
+/*5º seccion.................................................*/
+.info{/*seccion al 80% de ancho, estructurado en tabra con margenes y elementos centrados*/
+    width: 80%;
+    display: table;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    align-items: center;
+    margin: auto;
+}
+.column{/*ancho del 33.33% a la izquierda con relleno y texto centrado*/
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+}
+.column img{/*imagen con tamaño establecido*/
+    width: 150px;
+    height: 150px;
+}
+
+
+/*6º seccion.................................................*/
+table{/*ocupacion total, con bordes juntos y texto a la izquierda*/
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{/*relleno*/
+	padding: 20px;
+}
+
+thead{/*color y color de fondo y linea de abajo fijado*/
+	background-color: #24303c;
+	border-bottom: solid 5px #0a0e11;
+	color: white;
+}
+
+tr:nth-child(even){/*cambio de color para diferenciar las filas*/
+	background-color: #ddd;
+}
+
+
+/*Footer..................................*/
+footer{/*colores fijados*/
+    background: rgb(14, 14, 14);
+    color: #fff;
+}
+.contenido-footer{/*para conseguir centrar todos los elementos del div en columnas peroi una debajo de la otra*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contenido-footer h3{
+    font-size: 28px;
+}
+.redes-sociales{/*conseguir que los iconos de redes sociales salgas uno seguido del otro con cierta separacion y centrados*/
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 48px 0;
+}
+.redes-sociales li{
+    margin: 0 10px;
+}
+.redes-sociales a{
+    color: #fff;
+}
+.redes-sociales a:hover i{/*al pasar el raton que cambien de color*/
+    color: aqua;
+}
+.footer-abajo{/*parta mas baja con otro color de fondo y centrado*/
+    background: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+/*Estilos Generales.......................*/
+.titulo{/*tamaño del titulo y centrarlo, tambien un margen inferior*/
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.parrafo{/*iguala la longitud de todas las lienas y un margen inferior*/
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.imagen{/*ocupa la mitad de donde este y un margen de un 15% en todas direcciones*/
+    width: 50%;
+    margin: 15%;
+}
+
+.boton{/*creamos una caja de bloque con color de fondo, redondeado de los border, un relleno. Al texto le quitamos decoraciones del enlace y le ponemos color*/
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #24303c;
+    border-radius: 8px;
+    color: #fff;
+}

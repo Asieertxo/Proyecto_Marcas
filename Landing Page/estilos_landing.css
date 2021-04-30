@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+  
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Portada..............................................................*/
+header{
+    background-color: #24303c; /*color de fondo*/
+    width: 100%; /*ancho de la cabecara*/
+    height: 650px; /*largo de  la cabecara*/
+}
+.textos-portada{
+    height: 500px; /*ancho de texto*/
+    color: #fff; /*color de texto*/
+    display: flex; 
+    flex-direction: column;       /*Con estos 4 ponemos*/
+    justify-content: center;      /*los textos centrados*/
+    align-items: center;
+}
+.textos-portada h1{
+    font-size: 60px; /*tamaño*/
+}
+.textos-portada p{
+    font-size: 25px; /*tamaño*/
+    margin-bottom: 20px; /*margen de abajo*/
+}
+.textos-portada a{/*boton centrado*/
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #272424;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/*Caja navegacion......................................................*/
+.navegacion {
+    overflow: hidden; /*regula visibilidad*/
+    background-color: #12181f; /*color de fondo*/
+    border-bottom-left-radius: 15px; /*redondea esquina*/
+    border-bottom-right-radius: 15px;/*redondea esquina*/
+}
+/*Enlacen de navegacion*/
+.navegacion a {
+    float: left; /*flotarlo a la izquierda*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*quitamos la linea de enlace*/
+}
+
+/* Color al pasar el raton*/
+.navegacion a:hover {
+    background-color: #24303c;
+}
+
+.navegacion div{ /*posicionado a la derecha y decoracion de caja de texto y boton*/
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*1º seccion..................................................*/
+.izq-columna{       /*con estas 2 clases dividimos la seleccion en 2 mitades iguales*/
+    float: left;
+    width: 50%;
+}
+.der-columna{
+    float: left;
+    width: 50%;
+}
+
+/*2º seccion.................................................*/
+.seccion,
+.wave-seccion{/*determinamos el tamaño de la seccion, el margen y el relleno*/
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+.seccion{
+    padding: 80px 0;
+}
+.cartas{/*ponemos que ocupe el 100% de forma flexible que permite ponerlas de forma orizaontar y no todas en vertical*/
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.carta{/*ocupa el 30% del div, centrado con largo de 300px y la transicion de reescalado*/
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+.carta:hover{/*al pasar el raton el puntero cambia y reescalamos un poquito la carta*/
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/*3º seccion.................................................*/
+.galeria{/*color de fondo*/
+    background: #f2f2f2;
+}
+.fotos{/*ancho maximo con espaciados y colocado*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.fotos img{/*ancho de un 30% con margen abajo, en tipo bloke y cambia el puntero*/
+    width: 30%;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+/*3º seccion.................................................*/
+.columna-texto{/*ponemos el texto que ocupe menos de la mitad a la izquierda y con un 5% de margen derecho*/
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+/*Footer.....................................................*/
+footer{/*color de fondo y de texto*/
+    background-color: #272424;
+    color: #fff;
+}
+.formulario{/*damos espaciado y poder mover*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input{/*fondo transparente, con borde blanco y relleno*/
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px  solid #fff;
+    padding: 20px 10px;
+}
+input[type="text"]{/*tipo texto en bloque con 49% de ancho y margen abajo*/
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+input[type="email"]{/*tipo email en bloque con 49% de ancho y margen abajo*/
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+.formulario textarea{/*ancho entero y margen abajo*/
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Footer de abajo...........................................*/
+.footer-abajo{/*parta mas baja con otro color de fondo y centrado*/
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+
+
+
+/*Estilos generales*/
+.titulo{/*tamaño del titulo y centrarlo, tambien un margen inferior*/
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.parrafo{/*iguala la longitud de todas las lienas y un margen inferior*/
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.imagen{/*ocupa la mitad de donde este y un margen de un 15% en todas direcciones*/
+    width: 50%;
+    margin: 15%;
+}
+
+.boton{/*creamos una caja de bloque con color de fondo, redondeado de los border, un relleno. Al texto le quitamos decoraciones del enlace y le ponemos color*/
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #24303c;
+    border-radius: 8px;
+    color: #fff;
+}

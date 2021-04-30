@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+    <head>
+        <title>Landing Page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilos_landing.css">
+    </head>
+
+    <body>
+        <header><!--Portada-->
+            <div class="textos-portada">
+                <h1>Servicios Moviles</h1>
+                <p>Bienvenido a la Landing Page</p>
+                <a href="#contacto">Contacta</a>
+            </div>
+        </header>
+
+        <!--Navegacion superior-->
+        <div class="navegacion">
+            <a href="../Principal/principal.html">Home</a>
+            <a href="../Noticias/noticias.html">Noticias</a>
+            <a href="../Reparacion/reparacion.html">Reparacion</a>
+            <a href="../Acceso/registrar.html">Acceso</a>
+            
+            <div class="navegacion">
+              <form method="GET" action="https://www.google.com/search" target="_blank">
+                <input type="search" name="q" placeholder="Buscar en Google" autofocus required>
+                <input type="submit">
+              </form>
+            </div>
+            <a href="../Nosotros/nosotros.html" style="float:right;">Nosotros</a>
+            <a href="../Landing Page/Landing Page.html" style="float:right">Contacto</a>
+        </div>
+
+        <!--1º Seccion - informacion-->
+        <section class="seccion">
+            <div class="izq-columna"><!--Imagen en la izquierda-->
+                <img class="imagen" src="../../GM/Landing Page HTML/Landing Page HTML/img/ilustracion1.svg">
+            </div>
+            <div class="der-columna" style="float: right;"><!--Texto en la derecha-->
+                <h2 class="titulo">Asier Garcia</h2>
+                <p class="parrafo">Empresa de informatica lider en su sector dirigida a todo tipo de instalaciones de equipos y software, administramos redes de corporaciones y gestionamos su seguridad y funcionamiento</p>
+                <a class="boton" href="#">Saber mas</a>
+            </div>
+        </section>
+
+        <!--2º Seccion - cartas servicios-->
+        <section class="seccion">
+            <h2 class="titulo">Nuestros servicios</h2>
+            <div class="cartas"><!--3 cartas de servicios-->
+                <article class="carta">
+                    <h3>Asesoramiento</h3>
+                    <p>Le recomendamos dispositivos de acuerdo a su presupuesto</p>
+                    <a href="#" class="boton">Saber mas</a>
+                </article>
+                <article class="carta">
+                    <h3>Reparacion</h3>
+                    <p>Le reparamos cualquier dispositivo con la mayor calidad y garantia</p>
+                    <a href="#" class="boton">Saber mas</a>
+                </article>
+                <article class="carta">
+                    <h3>Software</h3>
+                    <p>Le instalamos y configuramos cualquier tipo de software a su dispositivo</p>
+                    <a href="#" class="boton">Saber mas</a>
+                </article>
+            </div>
+        </section>
+
+        <!--3º Seccion - galeria-->
+        <section class="galeria">
+            <div class="seccion">
+                <h2 class="titulo">Imagenes de Nuestro Trabajo</h2>
+                <article class="fotos"><!--6 fotos en 3x2-->
+                    <img src="img/uno.jpg" alt="">
+                    <img src="img/dos.jpg" alt="">
+                    <img src="img/tres.jpg" alt="">
+                    <img src="img/cuatro.jpg" alt="">
+                    <img src="img/cinco.jpg" alt="">
+                    <img src="img/seis.jpg" alt="">
+                </article>
+            </div>
+        </section>
+
+        <!--4º seccion - video-->
+        <section class="video">
+            <div class="seccion ultima">
+                <div class="columna-texto">
+                    <h2 class="titulo">Video de Nuestro Trabajo</h2>
+                    <p class="parrafo">Reparamos el dispositivo que necesite con la mayor calidad y seguridad del mercado.</p>
+                    <p class="parrafo">Instalamos y configuramos el software necesario que requiera como usted quiera o necesite.</p>
+                    <p class="parrafo">Eleccion y montaje de componenetes para un ordenador dentro de un presupuesto</p>
+                    <a href="#" class="boton">Saber mas</a>
+                </div>
+                <video width="500" height="400" controls>
+                    <source src="img/mme-video.webm" type="video/webm"><!--Video almacenado-->
+                </video>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer id="#contacto">
+            <div class="seccion">
+                <h2 class="titulo">Contacta</h2>
+                <form action="" class="formulario"><!--Formulario-->
+                    <input class="input" type="text" name="nombre" id="" placeholder="Nombre">
+                    <input class="input"  type="number" name="numeor" id="" placeholder="Numero">
+                    <input class="input"  type="email" name="" id="email" placeholder="Email">
+                    <textarea  class="input" name="texto" id="" cols="300" rows="9" placeholder="Mensaje"></textarea>
+                    <input class="input"  type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="footer-abajo"><!--Copyright-->
+                <p>copyright &copy;2021 | Proyecto de marcas de Asier</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,205 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  max-width: 2060px;
+  margin: 0 auto;
+}
+
+/*Portada..............................................................*/
+header{
+  background-color: #24303c; /*color de fondo*/
+  width: 100%; /*ancho de la cabecara*/
+  height: 650px; /*largo de  la cabecara*/
+}
+.textos-portada{
+  height: 500px; /*ancho de texto*/
+  color: #fff; /*color de texto*/
+  display: flex; 
+  flex-direction: column;       /*Con estos 4 ponemos*/
+  justify-content: center;      /*los textos centrados*/
+  align-items: center;
+}
+.textos-portada h1{
+  font-size: 60px; /*tamaño*/
+}
+.textos-portada p{
+  font-size: 25px; /*tamaño*/
+  margin-bottom: 20px; /*margen de abajo*/
+}
+
+/*Caja navegacion......................................................*/
+.navegacion {
+  overflow: hidden; /*regula visibilidad*/
+  background-color: #12181f; /*color de fondo*/
+  border-bottom-left-radius: 15px; /*redondea esquina*/
+  border-bottom-right-radius: 15px;/*redondea esquina*/
+}
+/*Enlacen de navegacion*/
+.navegacion a {
+  float: left; /*flotarlo a la izquierda*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*quitamos la linea de enlace*/
+}
+
+/* Color al pasar el raton*/
+.navegacion a:hover {
+  background-color: #24303c;
+}
+
+.navegacion div{ /*posicionado a la derecha y decoracion de caja de texto y boton*/
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Dos columnas una al lado de otra ...................................*/
+/* Columna Izquierda */
+.izqcolumna {/*divide la pagina en un trozo de 3/4*/
+  float: left;
+  width: 75%;
+}
+
+/* Tarjetas */
+.tarjeta {/*marcamos un fondo, es espaciado, margenes y redondeo de borde*/
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 0.3em;
+  background-color: #d8d1cf7c;
+}
+
+/*Enlace de noticias*/
+.e-noticia{/*texto con color, sin decoracion*/
+  color: #272424;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*Imagenes de noticias ()*/
+.div-img {/*posicion relativa, ancho entero y borde redondeado*/
+  position: relative;
+  width: 100%;
+  border-radius: 0.3em;
+}
+.img {/**/
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 0.3em;
+}
+.tran-img {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.div-img:hover .img {
+  opacity: 0.5;
+}
+.div-img:hover .tran-img {
+  opacity: 1;
+}
+
+/* Columna derecha.............. */
+.dercolumna {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/*Redes Sociales..................................*/
+.redes-sociales{/*conseguir que los iconos de redes sociales salgas uno seguido del otro con cierta separacion y centrados*/
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 48px 0;
+}
+.redes-sociales li{
+  margin: 0 10px;
+}
+.redes-sociales a{
+  color: black;
+}
+.redes-sociales a:hover i{/*al pasar el raton que cambien de color*/
+  color: aqua;
+}
+
+/* Despues de las columnas.............................................*/
+.separacion:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer..............................................................*/
+.footer-abajo{/*parta mas baja con otro color de fondo y centrado*/
+  background: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Diseño receptivo: cuando la pantalla tiene menos de 800 px de ancho, haga que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+@media screen and (max-width: 800px) {
+  .izqcolumna, .dercolumna {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/*cuando la pantalla tiene menos de 400 px de ancho, haga que los enlaces de navegación se apilen uno encima del otro en lugar de uno al lado del otro*/
+@media screen and (max-width: 400px) {
+  .navegacion a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
+/*Boton de enlaces a otras paginas*/
+.boton{
+  background-color: #12181f;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+.button{
+  margin: 0px 0px 5px 0px;
+}
