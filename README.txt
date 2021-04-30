@@ -15,9 +15,10 @@ En general incluyen:
 
 ---Principal-------------------------------------------------------------------
 
+ - Cuadro de Cookies con enlace a pagina y boton
  - Seccion dividida
  - Video insertado de Youtube
- - Cuadros con movimiento al pasar el raton por encima
+ - Cuadros con movimiento al pasar el raton por encima con boton
  - 3 secciones con imagenes y textos superpuestos con posicionamiento
  - Mapa de Google Maps incrustado
 
@@ -26,6 +27,7 @@ En general incluyen:
  - La peor ya que la hice al principio
  - Dividida en dos columnas
  - Transparencia y aparicion de enlace al pasar el raton por encima de una foto
+ - Redes sociales a la derecha
 
 ---Contacto--------------------------------------------------------------------
 
@@ -42,12 +44,13 @@ En general incluyen:
  - Cuadros con movimiento al pasar el raton por encima con imagenes
 
 ---Reparacion------------------------------------------------------------------
+
  - div centrado con imagenes
- - imput range
- - javascript para el calculo de precios desde el imput range
+ - imput range con posiciones
+ - javascript para el calculo de precios desde el imput range en unas tarjetas
  - separacion de texto e imagen
  - Tres columnas con imagen, titulo y texto
- - Tabla 
+ - Tabla fon estilo
 
 ---Acceso----------------------------------------------------------------------
 
