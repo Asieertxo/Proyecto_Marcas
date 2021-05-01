@@ -1,0 +1,41 @@
+  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Acceso/estilo-acceso.css">
+  <title>Inicio de Sesion</title>
+  <script async type="text/javascript" src="Acceso/cambio.js"></script>
+
+  <script type="text/javascript">
+		function validar(){
+			var usuario = document.getElementById("usuario").value;
+			var Contraseña = document.getElementById("pass").value;
+
+			if(usuario == "asier@gmail.com" && Contraseña == "1234"){
+				document.location.href = "Principal/principal.html";
+			}
+			else{
+				alert("Verifique sus credenciales");
+			}
+		}
+  </script>
+</head>
+<body>
+  <form class="caja">
+    <h4>Iniciar Sesion</h4>
+    <!--Email-->
+    <input class="rellenar" type="email" name="email" id="usuario" placeholder="Ingrese su Nombre" required>
+    <!--Contraseña-->
+    <input class="rellenar" type="password" name="pass" id="pass" placeholder="Ingrese su Contraseña" required>
+    <!--Boton-->
+    <input type="button" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="verificar" class="boton">
+    <!--Registrarse-->
+    <p><a href="Acceso/registrar.html">¿No tienes cuenta?</a></p>
+  </form>
+
+
+
+
+</body>
+</html>

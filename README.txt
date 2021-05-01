@@ -10,6 +10,7 @@ En general incluyen:
  - Que no dependa del ancho del monitor
  - Imagenes y textos desplazados
  - Un footer con centrado y bootstrap de redes sociales
+ - Varios procesos con JavaScript
 
 
 
@@ -60,6 +61,8 @@ En general incluyen:
  - Input text, date, email, password, checkbox
  - Desplegable
  - Requiere rellenar para registrarse o iniciar con el boton
+ - Solo deja iniciar sesion con los datos justos por JavaScript
+
 
 
 
