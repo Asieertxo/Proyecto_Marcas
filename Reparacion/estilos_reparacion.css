@@ -102,8 +102,8 @@ body{
 
 /*3º seccion.................................................*/
 .contenedor{/*fijamos los margenes, el ancho y lo ponemos en columnas una al lado de otra*/
-    margin: 0 auto;
-    width: 90%;
+    width: 50%;
+    margin: auto;
     display: flex;
     text-align: center;
 }
