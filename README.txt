@@ -64,6 +64,8 @@ En general incluyen:
  - Solo deja iniciar sesion con los datos justos por JavaScript
 
 
+Hay un video explicativo en YouTube, el enlace esta en el correo.
+Tambien esta el enlace a la plataforma donde subi la pagina.
 
 
 
